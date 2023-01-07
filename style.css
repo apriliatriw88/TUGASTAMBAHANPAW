@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+  width: 100%;
+  /* box-sizing: border-box; */
+  /* padding: 40px; */
+  /* white-space: nowrap; */
+  height: 90%;
+  min-height: 94%;
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 95px;
+  text-align: center;
+  color: white;
+}
+
+.scoring h3 {
+    position: absolute;
+    top: 35%;
+    left:20%;
+    font-weight: 700;
+    font-size: 80px;
+    background-color:#1E1E1E ;
+}
+
+.score h3{
+    position: absolute;
+    left:70%;
+    top: 35%;
+    font-weight: 700;
+    font-size: 80px;
+    background-color: #222325;
+}
+
+.angka.huruf{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.scoring.score {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.container.huruf{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+/* .container {
+    position: absolute;
+    /* left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px; */
+    /* border-radius: 8px;
+    width: 35%;  
+    height: 100%;
+} */ */
+
+/* .sc {
+   display: flex;
+} */
+
+.huruf{
+    margin: auto;
+    padding: auto;
+}
+
+.scoring {
+    /* border-radius: 8px; */
+    /* background-color: #1E1E1E; */
+    /* color: white;
+    grid-column: 1/2; */
+    top: 40%;
+    left:71%;
+    position: fixed;
+
+}
+
+.score {
+    /* border-radius: 8px; */
+    /* display: grid; */
+    /* background-color: #1E1E1E; */
+    /* color: white;
+    grid-column: 2/2; */
+    top: 40%;
+    left:20%;
+    position: fixed;
+}
+
+.inisial>.satu{
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.nama>.satu{
+    display: grid;
+    grid-template-columns:90% 10%; 
+}
+
+.inisial>.satu>.abjad{
+    background-color: #FFD600;
+    padding: 6px;
+    text-align: center;
+    color: #1E1E1E;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.inisial>.satu>.title{
+    background-color: #222325;
+    color: #fff;
+    padding: 6px;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.nama>.satu>.abjad{
+    color: #1E1E1E;
+    background-color:#FFD600;
+    padding: 6px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.nama>.satu>.title{
+    background-color:#535456; 
+    color: #fff;
+    padding: 6px;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+    height: 90%;
+    min-height: 94%;
+    font-size: 50px;
+    line-height: 65px;
+    }
+    
+    .kiri, .kanan {
+    font-size: 60px;
+    }
+    }
