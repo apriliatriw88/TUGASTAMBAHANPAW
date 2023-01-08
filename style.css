@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+html {
+  font-family: 'Inter', sans-serif;
+  overflow: hidden
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    color: #fff;
+    text-align: center;
+    font-style: normal;
+    font-size:50px;
+    height: 90%;
+    line-height: 600px;
+    letter-spacing: normal;
+}
+
+.container_huruf{
+    width: 100%;
+    height: 10%;
+}
+
+.container, .container_huruf{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.scoring, .score{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.sc1{
+    background-color:#1E1E1E;
+}
+.sc2{
+    background-color: #222325;
+}
+.scoring{
+    font-weight: bold;
+    font-size:55px;
+    width: 10%;
+    margin: auto;
+}
+
+.score{
+    font-weight: bold;
+    font-size:55px;
+    width: 10%;
+    margin: auto;
+}
+.inisial>.satu{
+    display: grid;
+    grid-template-columns: 16% 90%;
+}
+
+.nama>.satu{
+    display: grid;
+    grid-template-columns:84% 16%; 
+}
+
+.inisial>.satu>.abjad{
+    background-color: #FFD600;
+    padding: 6px;
+    text-align: center;
+    color: #1E1E1E;
+    font-size: 10px;
+    font-weight: 40;
+}
+
+.inisial>.satu>.title{
+    background-color: #222325;
+    color: #fff;
+    padding: 6px;
+    text-align: left;
+    font-size: 10px;
+    font-weight: 40;
+}
+
+.nama>.satu>.abjad{
+    color: #1E1E1E;
+    background-color:#FFD600;
+    padding: 6px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 40;
+}
+
+.nama>.satu>.title{
+    background-color:#535456; 
+    color: #fff;
+    padding: 6px;
+    text-align: right;
+    font-size: 10px;
+    font-weight: 40;
+}
+
+@media (max-width:468px) {
+   
+    .inisial>.satu{
+        display: grid;
+        grid-template-columns: 10% 90%;
+    }
+    
+    .nama>.satu{
+        display: grid;
+        grid-template-columns:84% 16%; 
+    }
+
+    .container_huruf{
+        font-size: 10px;
+    }
+
+    .kiri, .kanan{
+        font-size: 55px;
+        
+    }
+}
+
+
+@media only screen and(max-device-widht: 868px) and (orientation: landscape){
+    
+    .inisial>.satu{
+        display: grid;
+        grid-template-columns: 10% 90%;
+    }
+    
+    .nama>.satu{
+        display: grid;
+        grid-template-columns:84% 16%; 
+    }
+
+    .container_huruf{
+        font-size: 10px;
+    }
+
+    .kiri, .kanan{
+        font-size: 45px;
+    }
+}
